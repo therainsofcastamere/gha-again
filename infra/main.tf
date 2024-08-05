@@ -70,7 +70,7 @@ resource "aws_instance" "apache2_server" {
   user_data = file("./scripts/user_data.sh")
   tags = {
     env  = var.environment
-    Name = "ec2-${local.name-suffix}"
+    Name = "ec2--${local.name-suffix}"
   }
 
   depends_on = [
