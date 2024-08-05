@@ -8,6 +8,6 @@ FROM openjdk:17-alpine
 RUN addgroup boot && adduser -D -h /home/boot -s /bin/ash boot -G boot
 USER boot
 WORKDIR /home/boot
-COPY --from=MAVEN_BUILD /build/target/gitops.jar /home/boot/gitops.jar
+COPY --from=MAVEN_BUILD /build/target/gitops-0.0.1-SNAPSHOT.jar /home/boot/gitops-0.0.1-SNAPSHOT.jar
 EXPOSE 8080
-CMD java -jar /home/boot/gitops.jar
+CMD java -jar /home/boot/gitops-0.0.1-SNAPSHOT.jar
