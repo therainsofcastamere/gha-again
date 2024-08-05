@@ -1,5 +1,0 @@
-com/mango/practical/gitops/GitopsApplication.class
-com/mango/practical/gitops/repository/UserRepository.class
-com/mango/practical/gitops/controller/UserController.class
-com/mango/practical/gitops/ServletInitializer.class
-com/mango/practical/gitops/model/User.class
